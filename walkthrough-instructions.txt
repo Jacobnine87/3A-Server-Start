@@ -10,9 +10,9 @@ Part I - Set up project locally
 7) Launch the server with: `node ./src/server.js`
 8) Test the server in Chrome by heading to localhost:3000 & localhost:3000/random
 9) Add "engines" key to package.json, give values for "node" and "npm"
-10) Under the "scrcipts" key, change "test" key value in package.json to "echo \"Tests Complete!\""
-11) Under the "scrcipts" key, add a "start" key to package.json, with a value of "node ./src/server.js"
-12) Under the "scrcipts" key, add a "pretest" key to package.json, with a value of "eslint ./src --fix"
+10) Under the "scripts" key, change "test" key value in package.json to "echo \"Tests Complete!\""
+11) Under the "scripts" key, add a "start" key to package.json, with a value of "node ./src/server.js"
+12) Under the "scripts" key, add a "pretest" key to package.json, with a value of "eslint ./src --fix"
 13) Check out eslint at: https://www.npmjs.com/package/eslint
 14) Download the eslint packages as a developer dependency: `npm install eslint --save-dev`
 15) Create an eslint config file with: `eslint --init`
