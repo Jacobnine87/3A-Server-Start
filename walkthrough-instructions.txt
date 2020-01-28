@@ -65,8 +65,9 @@ Part V - Test it out.
 Part VI - What happens with code errors?
 1) Edit server.js again, this time put a syntax error into your code (or an unused variable, or something else that will fail `npm test`
 2) git add, git commit, git push
-3) Head to https://circleci.com and check out the pipeline for the app - you should see it building - and then failing!
+3) Head to https://circleci.com and check out the pipeline for the app - you should see it building - and then failing! Click the disclosure triangle to see why the build failed (or run `npm test` on the command line)
 4) There is no step 4, because the app won't deploy to Heroku
+5) On GitHub, the green checkmark is now a red x! :-(
 
 
  
