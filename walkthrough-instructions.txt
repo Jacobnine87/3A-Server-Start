@@ -1,5 +1,18 @@
 3A Server Walkthrough Instructions
 
-1) Fork the https://github.com/tonethar/3A-Server-Start.git repository (Alternatively, click the "Use this template" button
-2) Move to your PC desktop, and git clone your forked repository
-3) 
+1) Fork the https://github.com/tonethar/3A-Server-Start.git repository (Alternatively, click the "Use this template" button)
+2) Rename the repository to "3A-Server"
+3) Move to your PC desktop, and git clone your forked repository
+4) Change directory into 3A-Server
+5) Create a package.json file: npm init -y
+6) Download the shortid package: npm install shortid
+7) Launch the server with: node ./src/server.js
+8) Test the server in Chrome by heading to localhost:3000 & localhost:3000/random
+9) Add "engines" key to package.json, give values for "node" and "npm"
+10) Change "test" key value in package.json to "echo \"Tests Complete!\""
+11) Add a "start" key to package.json, with a value of "node ./src/server.js"
+12) Add a "pretest" key to package.json, with a value of "eslint ./src --fix"
+13) Download the eslint packages as a developer dependency: npm install --save-dev eslint eslint-config-airbnb eslint-plugin-import
+14) Take a look at package.json to see the new "devDependencies" key
+
+
