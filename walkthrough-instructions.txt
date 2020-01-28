@@ -14,5 +14,6 @@
 12) Add a "pretest" key to package.json, with a value of "eslint ./src --fix"
 13) Download the eslint packages as a developer dependency: npm install --save-dev eslint eslint-config-airbnb eslint-plugin-import
 14) Take a look at package.json to see the new "devDependencies" key
+15) 
 
 
