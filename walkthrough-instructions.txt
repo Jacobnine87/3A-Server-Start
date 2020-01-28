@@ -5,7 +5,7 @@ Part I - Set up project locally
 2) Rename the repository to "3A-Server"
 3) Move to your PC desktop, and `git clone <url>` your forked repository
 4) Change directory into 3A-Server
-5) Create a package.json file: `npm init -y`
+5) Create a package.json file with the default values: `npm init -y` - then manually edit package.json and add a value for the "description" key
 6) Download the shortid package: `npm install shortid`
 7) Launch the server with: `node ./src/server.js`
 8) Test the server in Chrome by heading to localhost:3000 & localhost:3000/random
