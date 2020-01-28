@@ -17,6 +17,14 @@ Part I - Set up project locally
 14) Download the eslint packages as a developer dependency: `npm install eslint --save-dev`
 15) Create an eslint config file with: `eslint --init`
   - **you will have to answer questions - please follow along with Professor!**
+  - #1 - for "How would you like to use ESLint?" choose "To check syntax, find problems, and enforce code style"
+  - #2 for "What type of modules does your project use?" choose "CommonJS (require/exports)"
+  - #3 for Which framework does your project use? choose "None of these"
+  - #4 for "Where does your code run?" choose "Node"
+  - #5 for "How would you like to define a style for your project?" choose "Use a popular style guide"
+  - #6 for "Which style guide do you want to follow?" choose "Airbnb"
+  - #7 for "What format do you want your config file to be in?" choose "JSON"
+  - The go ahead and choose "Y" when it asks to install these dependencies
 16) Take a look at package.json to see the new "devDependencies" keys that were added
 17) `npm test` will run the "pretest" and the "test" key from package.json - be sure to fix any errors, or edit the config file to turn them into warnings (if that's the righ thing to do)
 18) `npm start` will run the server. Then head to Chrome to be sure that both routes still work
