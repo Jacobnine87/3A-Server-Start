@@ -51,7 +51,7 @@ Part III - CircleCI
  - After you push, check the "Pipelines" tab on CircleCI - your Project should be building automatically every time it is pushed
  - ERROR! Fix this by updating the node version in config.yml, and then add/commit/push the updates again
 6) Check the Pipelines tab on CircleCI again. What is CircleCI doing? It's running `npm test` for you, and reporting on the results. This time it should pass the tests
-7) Head to your 3A-Server repository on GitHub, click on the green checkmark, that shows your CircleCI builds
+7) Head to your 3A-Server repository on GitHub, click on the green checkmark next to "Latest commit", that gives a link to  your latest CircleCI build (the one you passed)
 
 Part IV - Heroku
 1) Head to https://dashboard.heroku.com/apps 
