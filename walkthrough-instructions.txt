@@ -13,7 +13,7 @@ Part I - Set up project locally
 10) In package.json, under the "scripts" key, change the "test" key value to "echo \"Tests Complete!\""
 11) In package.json, under the "scripts" key, add a "start" key with a value of "node ./src/server.js"
 12) In package.json, under the "scripts" key, add a "pretest" key, with a value of "eslint ./src --fix"
-13) Check out eslint at: https://www.npmjs.com/package/eslint
+13) Look over the installation instructions for eslint at: https://www.npmjs.com/package/eslint
 14) Download the eslint packages as a developer dependency: `npm install eslint --save-dev`
 15) Create an eslint config file with: `eslint --init`
   - **you will have to answer questions - please follow along with Professor!**
