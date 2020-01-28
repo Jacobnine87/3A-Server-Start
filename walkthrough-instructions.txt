@@ -28,9 +28,24 @@ Part II - Push to your GitHub
 - `git add .`
 - `git status`
 - `git commit -m "First commit"`
+- `git status`
 - `git push`
 - `git status`
-- check GitHub repository in browser
+- check 3A-Server repository up on GitHub
+
+Part III - CircleCI
+
+1) Head to https://circleci.com and set up an account if you need to
+2) Click "Add Projects" button (you may have to link to GitHub first)
+3) Choose 3A-Server and Click "Set up Project" button
+4) Download config.yml file and save at .circleci/config.yml
+5) Click "Start Building" button
+ - ERROR! Fix this by committing .circleci/config.yml to GitHub and try again
+ - ERROR! Fix this by updating node version in config.yml, and then committing the updates
+6) Check the Pipelines tab on CircleCI - your Project should be building automatically
+
+ 
+
 
 
 
