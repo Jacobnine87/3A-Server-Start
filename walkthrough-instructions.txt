@@ -68,15 +68,3 @@ Part VI - What happens with code errors?
 3) Head to https://circleci.com and check out the pipeline for the app - you should see it building - and then failing! Click the disclosure triangle to see why the build failed (or run `npm test` on the command line)
 4) There is no step 4, because the app won't deploy to Heroku
 5) On GitHub, the green checkmark is now a red x! :-(
-
-
- 
-
-
-
-
-
-
-
-
-
