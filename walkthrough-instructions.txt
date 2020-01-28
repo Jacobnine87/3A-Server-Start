@@ -47,10 +47,11 @@ Part III - CircleCI
 3) Choose 3A-Server and Click "Set up Project" button
 4) Download config.yml file and save at .circleci/config.yml
 5) Click "Start Building" button
- - ERROR! Fix this by committing .circleci/config.yml to GitHub and try again
- - ERROR! Fix this by updating the node version in config.yml, and then committing the updates
-6) Check the Pipelines tab on CircleCI - your Project should be building automatically every time it is pushed.What ius CircleCI doing? It's running `npm test` for you, and reporting on the results
-7) Head to your 3A-Server repository on GitHub, click on the green checkmark, that shows you your CircleCI builds
+ - ERROR! Fix this by add/commit/push .circleci/config.yml to GitHub and try again
+ - After you push, check the "Pipelines" tab on CircleCI - your Project should be building automatically every time it is pushed
+ - ERROR! Fix this by updating the node version in config.yml, and then add/commit/push the updates again
+6) Check the Pipelines tab on CircleCI again. What is CircleCI doing? It's running `npm test` for you, and reporting on the results. This time it should pass the tests
+7) Head to your 3A-Server repository on GitHub, click on the green checkmark, that shows your CircleCI builds
 
 Part IV - Heroku
 1) Head to https://dashboard.heroku.com/apps 
