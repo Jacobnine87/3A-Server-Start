@@ -31,18 +31,43 @@ Part II - Push to your GitHub
 - `git status`
 - `git push`
 - `git status`
-- check 3A-Server repository up on GitHub
+- check 3A-Server repository on GitHub to make sure it's up to date
 
 Part III - CircleCI
-
 1) Head to https://circleci.com and set up an account if you need to
 2) Click "Add Projects" button (you may have to link to GitHub first)
 3) Choose 3A-Server and Click "Set up Project" button
 4) Download config.yml file and save at .circleci/config.yml
 5) Click "Start Building" button
  - ERROR! Fix this by committing .circleci/config.yml to GitHub and try again
- - ERROR! Fix this by updating node version in config.yml, and then committing the updates
-6) Check the Pipelines tab on CircleCI - your Project should be building automatically
+ - ERROR! Fix this by updating the node version in config.yml, and then committing the updates
+6) Check the Pipelines tab on CircleCI - your Project should be building automatically every time it is pushed.What ius CircleCI doing? It's running `npm test` for you, and reporting on the results
+7) Head to your 3A-Server repository on GitHub, click on the green checkmark, that shows you your CircleCI builds
+
+Part IV - Heroku
+1) Head to https://dashboard.heroku.com/apps 
+2) Create a new app, and give it a meaningful name like "abc1234-3a-server" (where abc1234 is your ID)
+3) Choose "Deployment Method" GitHub
+4) Connect to your 3A-Server repository
+5) Click the "Automatic Deploys" button
+6) Check the "Wait for CI to pass before deploy" checkbox
+7) Click the "Deploy Branch" button to do a manual deploy (i.e. upload) to Heroku
+8) Click on the "Activity" tab to see the progress of your build
+9) Once it's finished, Click the "Open App" button to see your app in all it's glory. Test the / and the /random routes to be sure everything works.
+
+Part V - Test it out.
+1) Head back to your PC, and edit server.js so that the default HTML changes (maybe add some exclamation marks to the <h1>)
+2) git add, git commit, git push
+3) Head to https://circleci.com and check out the pipeline for the app - you should see it building
+4) When it's done and succeeded, head to Heroku, and open the "Activity" tab for the project to see the build in progress
+5) When that's done, reload the app's web page, you should see the changes
+
+Part VI - What happens with code errors?
+1) Edit server.js again, this time put a syntax error into your code (or an unused variable, or something else that will fail `npm test`
+2) git add, git commit, git push
+3) Head to https://circleci.com and check out the pipeline for the app - you should see it building - and then failing!
+4) There is no step 4, because the app won't deploy to Heroku
+
 
  
 
