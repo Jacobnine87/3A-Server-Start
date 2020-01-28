@@ -9,7 +9,7 @@ Part I - Set up project locally
 6) Download the shortid package: `npm install shortid`
 7) Launch the server with: `node ./src/server.js`
 8) Test the server in Chrome by heading to localhost:3000 & localhost:3000/random
-9) Add "engines" key to package.json, give values for "node" and "npm"
+9) In package.json, add an "engines" key to package.json, give correct values for both "node" and "npm"
 10) In package.json, under the "scripts" key, change the "test" key value to "echo \"Tests Complete!\""
 11) In package.json, under the "scripts" key, add a "start" key with a value of "node ./src/server.js"
 12) In package.json, under the "scripts" key, add a "pretest" key, with a value of "eslint ./src --fix"
